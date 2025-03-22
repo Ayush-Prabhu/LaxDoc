@@ -17,5 +17,6 @@ Manual method
 1. extract myenv, (make sure that extarction is in the current directory itself and not in another folder in it, i.e. pwd>myvenv>[lib,scripts...] is correct, pwd>myvenv>myvenv>[lib,scripts...] is incorrect).
 2. run LaxDoc.bat on windows.
 3. on linux the current venv might not work the right way, hence instead of unzipping this zip file, manually create a venv in pwd and install the required dependencies.
-
-   
+4. For running directly, in the home directory run:
+   php -S localhost:8000
+   python GUI/main.py
