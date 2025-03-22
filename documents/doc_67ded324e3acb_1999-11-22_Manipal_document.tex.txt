@@ -1,0 +1,5 @@
+Template: document.tex
+Date: 1999-11-22
+Place: Manipal
+Content:
+Namaste
