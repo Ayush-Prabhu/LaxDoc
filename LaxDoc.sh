@@ -1,5 +1,8 @@
 #!/bin/bash
-
+if [ ! -d "./myenv" ]; then
+    echo "Extracting myenv.zip..."
+    unzip myenv.zip -d .
+fi
 # Function to install PHP if not found
 install_php() {
     echo "PHP is required but not installed."
