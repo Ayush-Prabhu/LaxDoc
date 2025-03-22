@@ -1,6 +1,10 @@
 @echo off
 setlocal
-
+REM Check if myenv folder exists
+if not exist "myenv" (
+    echo Extracting myenv.zip...
+    powershell -Command "Expand-Archive -Path myenv.zip -DestinationPath ."
+)
 :: Check for PHP installation
 where php >nul 2>nul
 if %errorlevel% neq 0 (
